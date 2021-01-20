@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Sanity Gatsby Portfolio`,
+    title: `Dev_Bread`,
     description: `Dev portfolio showcasing Gatsby using Sanity and Netlify`,
     author: `Brad Thompson`,
   },
