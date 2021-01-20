@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 // Styles
 import styled from 'styled-components';
+import "@fontsource/open-sans" // Defaults to weight 400.
 // Component Imports
 import Header from './header';
 import { GlobalStyle } from '../theme/globalStyle';

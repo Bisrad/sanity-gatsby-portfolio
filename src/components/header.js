@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.div`
-  background: rebeccapurple;
+  background: #11202E;
   margin-bottom: 1.45rem;
 `;
 
@@ -18,7 +18,7 @@ const Headline = styled.div`
 `;
 
 const StyledLink = styled(Link)`
-  color: white;
+  color: #06BDD6;
   textDecoration: none;
 `;
 
