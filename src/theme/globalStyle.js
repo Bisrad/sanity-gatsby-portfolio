@@ -3,10 +3,13 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Kodchasan:400,700');
 
-  html {
-    background-color: #11202E;
-    color: #06BDD6;
-  }  
+  * {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 
   body {
     padding: 0;
@@ -21,3 +24,4 @@ export const GlobalStyle = createGlobalStyle`
     list-style-type: none;
   }
 `;
+

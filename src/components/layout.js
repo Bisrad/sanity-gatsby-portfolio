@@ -7,13 +7,20 @@ import styled from 'styled-components';
 import "@fontsource/open-sans" // Defaults to weight 400.
 // Component Imports
 import Header from './header';
+import Footer from './footer';
 import { GlobalStyle } from '../theme/globalStyle';
 
 const ContentWrapper = styled.div`
-  margin: 0 auto;
-  maxwidth: 960;
-  padding: 0px 1.0875rem 1.45rem;
-  paddingtop: 0;
+  flex: 1 0 auto;
+  max-width: 100vw;
+`;
+
+const FlexThisBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #101f2f;
+  color: #06BDD6;
 `;
 
 const Layout = ({ children }) => (
@@ -27,14 +34,24 @@ const Layout = ({ children }) => (
         }
       }
     `}
+
     render={data => (
       <>
         <GlobalStyle />
-        <Helmet title={data.site.siteMetadata.title} meta={[{ name: 'description', content: 'Sample' }, { name: 'keywords', content: 'sample, something' }]}>
+        <Helmet 
+          title={data.site.siteMetadata.title} 
+          meta={[
+            { name: 'description', content: 'Sample' }, 
+            { name: 'keywords', content: 'sample, something' }
+          ]}
+        >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <ContentWrapper>{children}</ContentWrapper>
+          <FlexThisBox>
+            <Header siteTitle={data.site.siteMetadata.title} />
+            <ContentWrapper>{children}</ContentWrapper>
+            <Footer />
+          </FlexThisBox>
       </>
     )}
   />
