@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 // Styles
+import { GlobalStyle } from '../theme/globalStyle';
 import styled from 'styled-components';
 import "@fontsource/open-sans" // Defaults to weight 400.
 // Component Imports
 import Header from './header';
 import Footer from './footer';
-import { GlobalStyle } from '../theme/globalStyle';
+import Contact from './contact';
+
 
 const ContentWrapper = styled.div`
   flex: 1 0 auto;
@@ -50,6 +52,7 @@ const Layout = ({ children }) => (
           <FlexThisBox>
             <Header siteTitle={data.site.siteMetadata.title} />
             <ContentWrapper>{children}</ContentWrapper>
+            <Contact />
             <Footer />
           </FlexThisBox>
       </>

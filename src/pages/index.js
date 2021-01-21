@@ -26,7 +26,7 @@ const LinkStyle = styled.div`
   text-align: center;
   margin-top: 3rem;
     .icon {
-      margin-right: 15px;
+      margin-right: 30px;
       color: #06BDD6;
     }
 `;
