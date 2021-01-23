@@ -1,6 +1,15 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import styled from 'styled-components';
 
+const LeftStyle = styled.div`
+    border-left: 1px;
+    border-left-style: solid;
+    height: vh100;
+        p {
+            padding-left: 15px;
+        }
+`;
 
 class Work extends React.Component {
     render() {
@@ -32,10 +41,11 @@ class Work extends React.Component {
                             Say Hello
                         </Button>    
                     </Col>
-                    <Col>
+                    <Col style={{ margin: 'auto' }}>
+                    <LeftStyle>
                     <p>veniam, et amet, qui quis, platea elit. ullamco eu consequat mollis labore elit. mollis aliquam est mollis incididunt aute duis scelerisque ea mi. adipiscing congue, aute consectetur malesuada amet, id pretium a</p>
-                    <p>veniam, et amet, qui quis, platea elit. ullamco eu consequat mollis labore elit. mollis aliquam est mollis incididunt aute duis scelerisque ea mi. adipiscing congue, aute consectetur malesuada amet, id pretium a</p>
-                    <p>veniam, et amet, qui quis, platea elit. ullamco eu consequat mollis labore elit. mollis aliquam est mollis incididunt aute duis scelerisque ea mi. adipiscing congue, aute consectetur malesuada amet, id pretium a</p>
+                    <p>veniam, et amet, qui quis, platea elit. ullamco eu consequat mollis labore elit. mollis aliquam est mollis incididunt aute duis scelerisque ea mi. adipiscing congue, aute consectetur malesuada amet, id pretium a</p>                    
+                    </LeftStyle>
                     </Col>
                 </Row>
             </Container>

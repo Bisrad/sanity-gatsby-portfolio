@@ -1,9 +1,9 @@
-// import { Link } from "gatsby";
+import { Link } from "gatsby";
 import React from "react"
-// import { Link } from "gatsby"
-import { Container, Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button, Form, Container } from 'react-bootstrap';
 // Styles
 import styled from 'styled-components';
+
 
 const NavStyle = styled.div`
   margin: 0;
@@ -13,12 +13,20 @@ const NavStyle = styled.div`
         color: #06BDD6!important;
       }
           #navbarResponsive {
-            margin-right: 5.8rem;
+            /* margin-right: 5.8rem; */
           }
           #navToggle {
             border: none;
             fill: #06BDD6;
           }
+          .pull-right {
+            color: #ffffff;
+          }
+`;
+
+const MainButton = styled.div`
+    display: flex;
+    justify-content: flex-end;
 `;
 
 const Header = ({ siteTitle }) => (
@@ -45,6 +53,16 @@ const Header = ({ siteTitle }) => (
                   <Nav.Link href="/contact">Contact</Nav.Link>
                 </Nav.Item>  
             </Nav>
+                <Form className="pull-right">
+                  <MainButton>
+                        <Button 
+                            variant="default"
+                            style={{ width: 60, borderColor: '#06BDD6', backgroundColor: 'none', color: '#06BDD6'  }}
+                            >
+                            <Link style={{ margin: 0 }} to="./pages/resume.js">Resume</Link>
+                        </Button>    
+                  </MainButton>
+                </Form>
           </Navbar.Collapse>
         </Navbar>
     </Container>
