@@ -1,10 +1,10 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import Image from 'react-bootstrap/Image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import styled from 'styled-components';
-import img1 from '../images/ProfilePic.png';
+import img2 from '../images/project.png';
 
 
 const LinkStyle = styled.div`
@@ -16,37 +16,36 @@ const LinkStyle = styled.div`
     }
 `;
 
-class About extends React.Component {
+class Projects extends React.Component {
     render() {
         return(
             <Container style={{ padding: 50 }}>
                 <Row>
                     <Col>
-                        <h3>Hey, I'm Brad</h3>
-                        <h5>Front End Developer</h5>
-                        <h5>Web & Graphic Designer</h5>
-                        <p>dapibus ipsum et sed aliquet, anim ipsum eu nec labore 
-                        sapien dolor in felis nunc. et deserunt ex curabitur aliqua. t
-                        incidunt mi. nullam nullam consectetur ut dapibus a quis, irure
-                        risus fugiat</p>
+                        <Image src={img2} alt="project img" fluid/>
                         <LinkStyle>
                             <FontAwesomeIcon className="icon" icon={faGithub} size='2x' />
                             <FontAwesomeIcon className="icon" icon={faFacebook} size='2x' />
                             <FontAwesomeIcon className="icon" icon={faTwitter} size='2x' />
                             <FontAwesomeIcon className="icon" icon={faLinkedin} size='2x' />
-                        </LinkStyle>  
-                        <LinkStyle>
                             <FontAwesomeIcon className="icon" icon={faGithub} size='2x' />
-                            <FontAwesomeIcon className="icon" icon={faFacebook} size='2x' />
-                            <FontAwesomeIcon className="icon" icon={faTwitter} size='2x' />
                         </LinkStyle>  
                     </Col>
                     <Col>
-                        <Image src={img1} alt="profile pic" fluid/>
+                        <h1 style={{ display: 'flex' }}>.01 | Title &nbsp; <FontAwesomeIcon className="icon" icon={faGithub} size='1x' /></h1>
+                        <p>et, euismod tempor consequat vehicula. diam est congue, in, mollis nec, pharetra, adipiscing exercitation ex mauris a lacus. in, sit quis,
+                         pellentesque pellentesque sapien tincidunt fermentum lorem, eu, sapien lobortis</p>
+                         <Button 
+                            variant="default"
+                            style={{ width: 350, borderColor: '#06BDD6', backgroundColor: 'none', color: '#06BDD6'  }}
+                            >
+                            View Deployment
+                        </Button>  
                     </Col>
                 </Row>
-            </Container>
-        );
+        </Container>    
+        )
     }
 }
-export default About
+
+export default Projects

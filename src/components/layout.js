@@ -12,6 +12,7 @@ import Footer from './footer';
 import Contact from './contact';
 import About from './about';
 import Work from './work';
+import Projects from './projects';
 
 
 const ContentWrapper = styled.div`
@@ -56,6 +57,7 @@ const Layout = ({ children }) => (
             <ContentWrapper>{children}</ContentWrapper>
             <About />
             <Work />
+            <Projects />
             <Contact />
             <Footer />
           </FlexThisBox>
