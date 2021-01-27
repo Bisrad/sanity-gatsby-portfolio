@@ -9,10 +9,6 @@ import "@fontsource/open-sans" // Defaults to weight 400.
 // Component Imports
 import Header from './header';
 import Footer from './footer';
-import Contact from './contact';
-import About from './about';
-import Work from './work';
-import Projects from './projects';
 
 
 const ContentWrapper = styled.div`
@@ -55,10 +51,7 @@ const Layout = ({ children }) => (
           <FlexThisBox>
             <Header siteTitle={data.site.siteMetadata.title} />
             <ContentWrapper>{children}</ContentWrapper>
-            <About />
-            <Work />
-            <Projects />
-            <Contact />
+        
             <Footer />
           </FlexThisBox>
       </>

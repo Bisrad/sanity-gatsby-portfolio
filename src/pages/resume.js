@@ -1,11 +1,15 @@
+import { Link } from 'gatsby';
 import React from 'react';
-
+import Layout from '../components/layout';
 class Resume extends React.Component {
     render() {
         return(
-            <div>
+            <Layout>
+            <main>
                 <h1>I'm the Resume Page</h1>
-            </div>
+                <Link to="/">Homepage</Link>
+            </main>
+            </Layout>
         );
     }
 }

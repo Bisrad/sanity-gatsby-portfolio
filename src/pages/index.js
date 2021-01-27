@@ -8,6 +8,12 @@ import Layout from '../components/layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { Container, Jumbotron} from 'react-bootstrap';
+// Page Import 
+import Contact from '../components/contact';
+import About from '../components/about';
+import Work from '../components/work';
+import Projects from '../components/projects';
+
 
 const container = styled.div`
   padding: 0!important
@@ -48,6 +54,10 @@ const IndexPage = () => (
             </LinkStyle>  
           </Container>
         </Jumbotron>
+        <About />
+        <Work />
+        <Projects />
+        <Contact />
   </Layout>
 );
 

@@ -36,7 +36,7 @@ class Contact extends React.Component {
                             style={{ width: 350, borderColor: '#06BDD6', backgroundColor: 'none', color: '#06BDD6'  }}
                             >
                             See More at Github
-                            </Button>    
+                        </Button>    
                     </Row>
                   </MainButton>
                   <MainButton>
