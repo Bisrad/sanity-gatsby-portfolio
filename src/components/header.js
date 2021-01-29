@@ -52,7 +52,7 @@ const Header = ({ siteTitle }) => (
                             variant="default"
                             style={{ width: 60, borderColor: '#06BDD6', backgroundColor: 'none', color: '#06BDD6'  }}
                             >
-                            <Link style={{ margin: 0 }} to="./pages/resume">Resume</Link>
+                            <Link style={{ margin: 0 }} to="/resume">Resume</Link>
                         </Button>    
                   </MainButton>
 
