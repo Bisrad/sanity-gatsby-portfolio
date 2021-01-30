@@ -23,7 +23,7 @@ const LinkStyle = styled.div`
 class Contact extends React.Component {
     render() {
         return(
-            <Container style={{ padding: 50 }} >
+            <Container id='contact' style={{ padding: 50 }} >
             <h1 style={{ textAlign: 'center',  marginBottom:'2.5rem'  }}>{"<"}GetInTouch   {"/>"}</h1>
                   <h4 style={{ textAlign: 'center', marginBottom:'2.5rem' }}>  
                         Currently Looking to Join an Awesome development team 

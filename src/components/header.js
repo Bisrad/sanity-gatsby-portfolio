@@ -40,10 +40,10 @@ const Header = ({ siteTitle }) => (
           <Nav as="ul" className="justify-content-center" activeKey="/home">
 
                   <Link to="/">Home</Link>
-                  <Link to="/">About</Link>
-                  <Link to="/">Work</Link>
-                  <Link to="/">Projects</Link>
-                  <Link to="/">Contact</Link>
+                  <Link to="/#about">About</Link>
+                  <Link to="/#work">Work</Link>
+                  <Link to="/#projects">Projects</Link>
+                  <Link to="/#contact">Contact</Link>
     
             </Nav>  
 

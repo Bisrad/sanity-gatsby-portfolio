@@ -14,11 +14,11 @@ const LeftStyle = styled.div`
 class Work extends React.Component {
     render() {
         return(
-            <Container style={{ borderRight: 3, padding: 50 }}>
+            <Container id='work' style={{ borderRight: 3, padding: 50 }}>
                 <Row>
                     <Col>
                     <h3 style={{ textAlign: 'left',  marginBottom:'2.5rem'  }}>{"<"}Where I've Worked  {"/>"}</h3>
-                    <Row>
+                    <Row style={{ margin: 'auto' }}>
                     <ul style={{ margin: 0, padding: 0 }}>
                         <li style={{ paddingBottom: 20 }}>
                         <h5>Web Designer</h5>

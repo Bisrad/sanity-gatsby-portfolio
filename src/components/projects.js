@@ -19,7 +19,7 @@ const LinkStyle = styled.div`
 class Projects extends React.Component {
     render() {
         return(
-            <Container style={{ padding: 50 }}>
+            <Container id='projects' style={{ marginTop: '5rem',  marginBottom: '5rem', padding: 50 }}>
                 <Row>
                     <Col>
                         <Image src={img2} alt="project img" fluid/>

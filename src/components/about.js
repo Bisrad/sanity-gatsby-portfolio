@@ -10,6 +10,7 @@ import img1 from '../images/ProfilePic.png';
 const LinkStyle = styled.div`
   display: block;
   margin-top: 1rem;
+  margin: auto;
     .icon {
       margin-right: 30px;
       color: #06BDD6;
@@ -19,7 +20,7 @@ const LinkStyle = styled.div`
 class About extends React.Component {
     render() {
         return(
-            <Container style={{ padding: 50 }}>
+            <Container id='about' style={{  padding: 50 }}>
                 <Row>
                     <Col>
                         <h3>Hey, I'm Brad</h3>
@@ -42,7 +43,7 @@ class About extends React.Component {
                         </LinkStyle>  
                     </Col>
                     <Col>
-                        <Image src={img1} alt="profile pic" fluid/>
+                        <Image style={{ margin: 'auto', display: 'flex', justifyContent: 'center', maxWidth: '75%' }}src={img1} alt="profile pic" fluid/>
                     </Col>
                 </Row>
             </Container>

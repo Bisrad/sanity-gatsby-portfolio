@@ -15,8 +15,10 @@ import Work from '../components/work';
 import Projects from '../components/projects';
 
 
+
+
 const container = styled.div`
-  padding: 0!important
+  padding: 0!important;
 `;
 
 const MainText = styled.div`
@@ -54,10 +56,10 @@ const IndexPage = () => (
             </LinkStyle>  
           </Container>
         </Jumbotron>
-        <About />
-        <Work />
-        <Projects />
-        <Contact />
+        <About id='about' />
+        <Work  id='work' />
+        <Projects id='projects' />
+        <Contact id='contact' />
   </Layout>
 );
 
