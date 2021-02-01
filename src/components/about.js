@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from 'react-bootstrap/Image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faFacebook, faTwitter, faLinkedin, faSass, faReact, faHtml5, faCss3, faJs } from '@fortawesome/free-brands-svg-icons'
 import styled from 'styled-components';
 import img1 from '../images/ProfilePic.png';
 
@@ -22,24 +22,20 @@ class About extends React.Component {
         return(
             <Container id='about' style={{  padding: 50 }}>
                 <Row>
-                    <Col>
-                        <h3>Hey, I'm Brad</h3>
-                        <h5>Front End Developer</h5>
-                        <h5>Web & Graphic Designer</h5>
-                        <p>dapibus ipsum et sed aliquet, anim ipsum eu nec labore 
-                        sapien dolor in felis nunc. et deserunt ex curabitur aliqua. t
-                        incidunt mi. nullam nullam consectetur ut dapibus a quis, irure
-                        risus fugiat</p>
+                    <Col style={{ margin: 'auto' }}>
+                        <h2>Hey, I'm Brad 👋</h2>
+                        <h6>Front End Developer | Digital Designer</h6>
+                    
+                        <p style={{ fontSize: '1rem' }}> 
+                        am an avid learner, driven by a need to envelop myself in what interests me, 
+                        coupled with my self-starter nature. I am constantly on a mission to find the balance between ideal and practical.
+                        </p>
                         <LinkStyle>
-                            <FontAwesomeIcon className="icon" icon={faGithub} size='2x' />
-                            <FontAwesomeIcon className="icon" icon={faFacebook} size='2x' />
-                            <FontAwesomeIcon className="icon" icon={faTwitter} size='2x' />
-                            <FontAwesomeIcon className="icon" icon={faLinkedin} size='2x' />
-                        </LinkStyle>  
-                        <LinkStyle>
-                            <FontAwesomeIcon className="icon" icon={faGithub} size='2x' />
-                            <FontAwesomeIcon className="icon" icon={faFacebook} size='2x' />
-                            <FontAwesomeIcon className="icon" icon={faTwitter} size='2x' />
+                            <FontAwesomeIcon className="icon" icon={faReact} size='2x' />
+                            <FontAwesomeIcon className="icon" icon={faJs} size='2x' />
+                            <FontAwesomeIcon className="icon" icon={faHtml5} size='2x' />
+                            <FontAwesomeIcon className="icon" icon={faCss3} size='2x' />
+                            <FontAwesomeIcon className="icon" icon={faSass} size='2x' />
                         </LinkStyle>  
                     </Col>
                     <Col>

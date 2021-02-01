@@ -13,7 +13,39 @@ import Contact from '../components/contact';
 import About from '../components/about';
 import Work from '../components/work';
 import Projects from '../components/projects';
+import Facts from '../components/facts';
+import { Link } from 'gatsby';
 
+const Boop = ({ rotation = 0, timing = 150, children }) => {
+  const [isBooped, setIsBooped] = React.useState(false);
+  const style = {
+    display: 'inline-block',
+    backfaceVisibility: 'hidden',
+    transform: isBooped
+      ? `rotate(${rotation}deg)`
+      : `rotate(0deg)`,
+    transition: `transform ${timing}ms`,
+  };
+  React.useEffect(() => {
+    if (!isBooped) {
+      return;
+    }
+    const timeoutId = window.setTimeout(() => {
+      setIsBooped(false);
+    }, timing);
+    return () => {
+      window.clearTimeout(timeoutId);
+    };
+  }, [isBooped, timing]);
+  const trigger = () => {
+    setIsBooped(true);
+  };
+  return (
+    <span onMouseEnter={trigger} style={style}>
+      {children}
+    </span>
+  );
+};
 
 
 
@@ -49,14 +81,31 @@ const IndexPage = () => (
             </MainText>
                 {/* Site Links */}
             <LinkStyle>
+            <Boop  rotation={20} timing={200}>
+            <Link to='https://github.com/Bisrad'>
               <FontAwesomeIcon className="icon" icon={faGithub} size='2x' />
-              <FontAwesomeIcon className="icon" icon={faFacebook} size='2x' />
+            </Link>
+            </Boop>
+            <Boop  rotation={-20} timing={200}>
+            <Link to='https://www.facebook.com/brad.thompson.543792'>
+              <FontAwesomeIcon className="icon flex-grow-2" icon={faFacebook} size='2x' />
+            </Link>
+            </Boop>
+            <Boop  rotation={20} timing={200}>
+            <Link to='https://twitter.com/Dev_Bread'>
               <FontAwesomeIcon className="icon" icon={faTwitter} size='2x' />
+            </Link>
+            </Boop>
+            <Boop  rotation={-20} timing={200}>
+            <Link to='https://www.linkedin.com/in/brad-thompson-95a88913a/'>
               <FontAwesomeIcon className="icon" icon={faLinkedin} size='2x' />
-            </LinkStyle>  
+            </Link>
+            </Boop>
+            </LinkStyle> 
           </Container>
         </Jumbotron>
         <About id='about' />
+        <Facts id='facts' />
         <Work  id='work' />
         <Projects id='projects' />
         <Contact id='contact' />

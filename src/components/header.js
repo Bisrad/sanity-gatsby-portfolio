@@ -5,6 +5,8 @@ import { Navbar, Nav, Button, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 
 
+
+
 const NavStyle = styled.div`
   margin: 0;
   background-color: #101f2f; 
