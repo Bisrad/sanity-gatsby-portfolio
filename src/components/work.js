@@ -11,35 +11,36 @@ const LeftStyle = styled.div`
         }
 `;
 
+const ButtonStyle = styled.div`
+    width: 350;
+    border-color: '#06BDD6'; 
+    background-color: 'none';
+    color: '#06BDD6';
+`;
+
 class Work extends React.Component {
     render() {
         return(
             <Container id='work' style={{ borderRight: 3, padding: 50 }}>
                 <Row>
                     <Col>
-                    <h3 style={{ textAlign: 'left',  marginBottom:'2.5rem'  }}>{"<"}Where I've Worked  {"/>"}</h3>
+                    <h2 style={{ marginBottom:'1.5rem'  }}>Work Experience</h2>
                     <Row style={{ margin: 'auto' }}>
                     <ul style={{ margin: 0, padding: 0 }}>
                         <li style={{ paddingBottom: 20 }}>
-                        <h5>Web Designer</h5>
+                        <Button>Web Designer</Button>
                         </li>
                         <li style={{ paddingBottom: 20 }}>
-                        <h5>Quality Assurance</h5>
+                        <Button>Quality Assurance Engineer</Button>
                         </li>
                         <li style={{ paddingBottom: 20 }}>
-                        <h5>Web Developer</h5>
+                        <Button>Web Developer</Button>
                         </li>
                         <li style={{ paddingBottom: 20 }}>
-                        <h5>Wordpress Developer</h5>
+                        <Button>Wordpress Developer</Button>
                         </li>
                     </ul>
                     </Row>
-                        <Button 
-                            variant="default"
-                            style={{ width: 350, borderColor: '#06BDD6', backgroundColor: 'none', color: '#06BDD6'  }}
-                            >
-                            Say Hello
-                        </Button>    
                     </Col>
                     <Col style={{ margin: 'auto' }}>
                     <LeftStyle>
