@@ -16,16 +16,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      // resolve: `gatsby-source-github-api`,
-      // options: {
-      // token: required by the GitHub API
-      // token:  {dotenv.GH_TOKEN} ,
-
-      // GraphQLquery: defaults to a search query
-      // graphQLQuery: anotherString,
-
-      // variables: defaults to variables needed for a search query
-      // variables: someObject,
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
