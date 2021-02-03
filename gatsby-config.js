@@ -1,4 +1,4 @@
-import dotenv from 'dotenv'
+// import dotenv from 'dotenv'
 
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -16,17 +16,16 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-source-github-api`,
-      options: {
+      // resolve: `gatsby-source-github-api`,
+      // options: {
       // token: required by the GitHub API
-      token:  {dotenv.GH_TOKEN} ,
+      // token:  {dotenv.GH_TOKEN} ,
 
       // GraphQLquery: defaults to a search query
-      graphQLQuery: anotherString,
+      // graphQLQuery: anotherString,
 
       // variables: defaults to variables needed for a search query
-      variables: someObject,
-    },
+      // variables: someObject,
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
