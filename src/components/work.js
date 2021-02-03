@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import styled from 'styled-components';
+import Toggle from './Toggle'
 
 const LeftStyle = styled.div`
     border-left: 1px;
@@ -25,6 +26,7 @@ class Work extends React.Component {
                 <Row>
                     <Col>
                     <h2 style={{ marginBottom:'1.5rem'  }}>Work Experience</h2>
+                    <Toggle />
                     <Row style={{ margin: 'auto' }}>
                     <ul style={{ margin: 0, padding: 0 }}>
                         <li style={{ paddingBottom: 20 }}>
